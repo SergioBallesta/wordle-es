@@ -1,0 +1,93 @@
+/* ═══════════════════════════════════════
+   WORDLE EN ESPAÑOL — Global Styles
+   ═══════════════════════════════════════ */
+
+:root {
+  --bg-primary: #13141a;
+  --bg-secondary: #181a22;
+  --bg-card: #1e2028;
+  --bg-elevated: #22242e;
+  --bg-key: #5c6070;
+
+  --color-correct: #5a9a60;
+  --color-present: #c9a644;
+  --color-absent: #4a4d56;
+
+  --text-primary: #e2e4e9;
+  --text-secondary: #9da3ae;
+  --text-muted: #6b7080;
+
+  --border-default: #3a3d47;
+  --border-active: #6b7080;
+  --border-subtle: #22242e;
+  --border-card: #2a2d38;
+
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* ─── Animations ─────────────────────── */
+
+@keyframes flipIn {
+  0%   { transform: scaleY(1); }
+  50%  { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
+}
+
+@keyframes popIn {
+  0%   { transform: scale(0.82); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shakeRow {
+  0%, 100% { transform: translateX(0); }
+  20%  { transform: translateX(-6px); }
+  40%  { transform: translateX(6px); }
+  60%  { transform: translateX(-4px); }
+  80%  { transform: translateX(4px); }
+}
+
+@keyframes bounceCell {
+  0%, 100% { transform: translateY(0); }
+  40%  { transform: translateY(-20px); }
+  60%  { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translate(-50%, -10px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
