@@ -4,7 +4,7 @@
 
 **Adivina la palabra del día en 6 intentos.**
 
-[![Deploy](https://github.com/TU_USUARIO/wordle-es/actions/workflows/deploy.yml/badge.svg)](https://github.com/TU_USUARIO/wordle-es/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/SergioBallesta/wordle-es/actions/workflows/deploy.yml/badge.svg)](https://github.com/SergioBallesta/wordle-es/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)](https://react.dev/)
@@ -12,7 +12,7 @@
 
 Una nueva palabra cada día · Estadísticas persistentes · Compartir resultado
 
-[**▶ Jugar ahora**](https://TU_USUARIO.github.io/wordle-es/)
+[**▶ Jugar ahora**](https://SergioBallesta.github.io/wordle-es/)
 
 ---
 
@@ -89,7 +89,7 @@ wordle-es/
 ### Clonar e instalar
 
 ```bash
-git clone https://github.com/TU_USUARIO/wordle-es.git
+git clone https://github.com/SergioBallesta/wordle-es.git
 cd wordle-es
 npm install
 ```
@@ -120,7 +120,7 @@ El repositorio incluye un workflow de GitHub Actions que despliega automáticame
 1. Ve a **Settings → Pages** en tu repositorio de GitHub.
 2. En **Source**, selecciona **GitHub Actions**.
 3. Haz push a `main` — el deploy se ejecuta automáticamente.
-4. Tu juego estará disponible en `https://TU_USUARIO.github.io/wordle-es/`
+4. Tu juego estará disponible en `https://SergioBallesta.github.io/wordle-es/`
 
 > **Nota:** Si tu repositorio tiene un nombre diferente a `wordle-es`, actualiza el campo `base` en `vite.config.ts` para que coincida.
 
